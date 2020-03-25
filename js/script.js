@@ -1,5 +1,30 @@
 console.log("JS Loaded!");
 
+////////// request info slider //////////
+
+document.querySelector(".form-slider-last").setAttribute("id", "hidden");
+document.querySelector(".steps-2").setAttribute("id", "hidden");
+
+document
+  .querySelector("#continue-button")
+  .addEventListener("click", function() {
+    document.querySelector(".form-slider-last").removeAttribute("id", "hidden");
+    document.querySelector(".steps-2").removeAttribute("id", "hidden");
+    document.querySelector(".steps-1").setAttribute("id", "hidden");
+    document.querySelector(".form-slider").setAttribute("id", "hidden");
+  });
+
+////////// hamburger menu //////////
+
+document
+  .getElementsByClassName("bars")[0]
+  .addEventListener("click", function() {
+    document.getElementsByClassName("menu")[0].classList.add("menu-open");
+  });
+document.getElementById("menu-close").addEventListener("click", function() {
+  document.getElementsByClassName("menu")[0].classList.remove("menu-open");
+});
+
 ////////// student slider //////////
 
 var slideIndex = 1;

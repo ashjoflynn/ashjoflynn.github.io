@@ -53,8 +53,9 @@
           </div>
         </div>
 
-        <aside class="menu">
+        <div class="menu">
           <nav class="main-nav">
+            <i class="fas fa-times" id="menu-close"></i>
             <ul>
               <li>About</li>
               <li>Programs</li>
@@ -74,7 +75,7 @@
               <li>Osher Lifelong Learning Institute</li>
             </ul>
           </nav>
-        </aside>
+        </div>
 
         <div class="menu-desktop">
           <nav class="desktop-nav">
@@ -321,7 +322,7 @@
           <img src="/images/img-8.jpg" class="student-img" alt="" />
           <div class="info-box">
             <p class="steps-1">Step 1 of 2</p>
-            <p class="steps-2" id="hidden">Step 2 of 2</p>
+            <p class="steps-2">Step 2 of 2</p>
             <h1>Get Started Today</h1>
 
             <form class="request-info-form" action="">
@@ -345,11 +346,11 @@
                   <option value>Option 4</option>
                   <option value>Option 5</option>
                 </select>
-                <button class="light-bg" id="continue-button" type="button">
+                <button class="light-bg" id="continue-button" type="button" onclick="changeid()">
                   Continue
                 </button>
               </div>
-              <div class="form-slider" id="hidden">
+              <div class="form-slider-last">
                 <label for="input">Name</label>
                 <input id="input" placeholder="Name" />
 
@@ -366,9 +367,8 @@
           </div>
         </div>
 
-      <div class="dot-pattern"></div>
-
       <footer>
+        <div class="dot-pattern-footer"></div>
         <div class="mobile-footer">
           <div class="top-footer">
             <div class="footer-text">
