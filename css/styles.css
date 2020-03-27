@@ -21,8 +21,8 @@ a:hover {
 }
 
 p {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 17px;
+  line-height: 21px;
   margin: 0px 0px 20px;
 }
 
@@ -75,6 +75,12 @@ h4 {
     font-size: 17px;
     line-height: 22px;
   }
+
+  .fa-arrow-right {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+  }
 }
 
 hr.green {
@@ -84,12 +90,14 @@ hr.green {
 
 button.light-bg {
   border: 2px solid #f3692d;
+  background-color: white;
   color: #f3692d;
   padding: 10px;
   transition: 0.4s;
   cursor: pointer;
   font-family: "prox-semibold";
   font-size: 17px;
+  position: relative;
 }
 
 button.light-bg:hover {
@@ -206,7 +214,7 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  overflow-y: scroll;
+  overflow-x: hidden;
   padding: 15px 30px;
   position: fixed;
   transition: all 0.5s ease-in-out;
@@ -400,19 +408,27 @@ header {
 .explore-dropdown {
   display: inline-block;
   position: relative;
-}
-
-.orange-underline {
+  cursor: pointer;
   border-bottom: 2px solid #f3692d;
   transition: 0.4s;
 }
 
-.orange-underline:hover {
-  color: #f3692d;
+.explore-dropdown button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0;
+  cursor: pointer;
 }
 
-.fa-caret-down {
-  color: #f3692d;
+.explore-dropdown button:active, .explore-dropdown button:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+.fa-chevron-down, .fa-chevron-up {
+  font-size: 16px;
 }
 
 .explore-dropdown a,
@@ -427,28 +443,25 @@ header {
 }
 
 .dropdown-content {
-  display: none;
-  width: 100%;
+  width: 125px;
   position: absolute;
   left: 0;
   color: white;
   padding-top: 5px;
   text-align: left;
+  display: none;
 }
 
 .dropdown-content a {
   margin: 0px;
-  padding: 8px 0px;
+  padding: 5px 0px;
   text-decoration: none;
   display: block;
+  cursor: pointer;
 }
 
 .dropdown-content a:hover {
   color: #f3692d;
-}
-
-.explore-dropdown:hover .dropdown-content {
-  display: block;
 }
 
 .mission {
@@ -586,14 +599,14 @@ header {
   background-color: transparent;
 }
 
-.fa-arrow-alt-circle-right {
+.fa-arrow-circle-right {
   transition: 0.3s ease;
   font-size: 35px;
   position: relative;
   z-index: 1;
 }
 
-.fa-arrow-alt-circle-right:hover {
+.fa-arrow-circle-right:hover {
   color: #d7d498;
 }
 
@@ -900,7 +913,8 @@ header {
   padding-bottom: 6px;
 }
 
-.form-slider, .form-slider-last {
+.form-slider,
+.form-slider-last {
   display: flex;
   flex-direction: column;
 }
@@ -914,6 +928,12 @@ header {
 
 .request-info-form button {
   margin-top: 10px;
+}
+
+.request-info-form .fa-arrow-right {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
 }
 
 #hidden {
@@ -966,7 +986,7 @@ footer {
 }
 
 .footer-text p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 footer ul {
@@ -1168,7 +1188,7 @@ footer a:hover {
   .sub-footer-list a {
     color: white;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
     margin: 0 30px;
   }
 }

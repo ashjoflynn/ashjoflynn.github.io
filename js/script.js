@@ -25,6 +25,23 @@ document.getElementById("menu-close").addEventListener("click", function() {
   document.getElementsByClassName("menu")[0].classList.remove("menu-open");
 });
 
+//////// hero dropdown //////////
+
+function toggleDropdown() {
+  var dropDownContent = document.querySelector(".dropdown-content");
+  var downArrow = document.querySelector(".fa-chevron-down");
+  var upArrow = document.querySelector(".fa-chevron-up");
+  upArrow.style.display = "none";
+  if (dropDownContent.style.display === "block") {
+    dropDownContent.style.display = "none";
+    downArrow.style.display = "inline-block";
+  } else {
+    dropDownContent.style.display = "block";
+    upArrow.style.display = "inline-block";
+    downArrow.style.display = "none";
+  }
+}
+
 ////////// student slider //////////
 
 var slideIndex = 1;

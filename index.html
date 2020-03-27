@@ -94,15 +94,12 @@
         <h1>CSU Rams Online</h1>
         <div class="explore">
           I am interested in exploring information about
-          <div class="explore-dropdown">
-            <a href=""
-              ><span class="orange-underline">programs</span>
-              <i class="fas fa-caret-down"></i
-            ></a>
+          <div class="explore-dropdown"><button onclick="toggleDropdown()">programs <i class="fas fa-chevron-down"></i> <i class="fas fa-chevron-up" id="hidden"></i></button>
             <div class="dropdown-content">
-              <a href="">cost</a>
-              <a href="">admission</a>
-              <a href="">future rams</a>
+                <a href="">programs</a>
+                <a href="">cost</a>
+                <a href="">admission</a>
+                <a href="">future rams</a>
             </div>
           </div>
         </div>
@@ -132,7 +129,7 @@
               from the norm and CSU Online helped me understand that is OK! Now,
               I am excelling, achieving and thriving.
             </p>
-            <p class="quote-name">–Lauren Kummerow, CSU Online student</p>
+            <p class="quote-name">–Firstname Last, CSU Online student</p>
           </div>
         </div>
 
@@ -145,7 +142,7 @@
               vehicula ex in auctor. Mauris et vehicula nunc, eget venenatis mi.
               Quisque vestibulum risus at quam feugiat, a imperdiet.
             </p>
-            <p class="quote-name">–John Smith, CSU Online student</p>
+            <p class="quote-name">–Firstname Last, CSU Online student</p>
           </div>
         </div>
 
@@ -169,8 +166,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
           <a class="next" onclick="plusSlides(1)"
-            ><i class="far fa-arrow-alt-circle-right"></i
-          ></a>
+            ><i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
 
@@ -183,7 +179,7 @@
             CSU is among the best in the nation and recognized by US News as one
             of the world’s most prestigious universities.
             </p>
-            <button class="light-bg">Learn what makes CSU unique</button>
+            <button class="light-bg">Learn what makes CSU unique <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -195,7 +191,7 @@
             CSU Online offers world-class degree programs from wherever you are.
             All courses are 100% online to fit your schedule.
             </p>
-            <button class="light-bg">Experience online courses</button>
+            <button class="light-bg">Experience online courses <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -207,7 +203,7 @@
             CSU’s faculty are the same award-winning faculty who not only teach
             on-campus but are at the forefront of research and discovery.
             </p>
-           <button class="light-bg">Read more about CSU's faculty</button>
+           <button class="light-bg">Read more about CSU's faculty <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
       </div>
@@ -313,8 +309,7 @@
             <span class="blog-dot" onclick="currentBlogSlide(3)"></span>
           </div>
           <a class="blog-next" onclick="plusBlogSlides(1)"
-            ><i class="far fa-arrow-alt-circle-right"></i
-          ></a>
+            ><i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
 
@@ -347,7 +342,7 @@
                   <option value>Option 5</option>
                 </select>
                 <button class="light-bg" id="continue-button" type="button" onclick="changeid()">
-                  Continue
+                  Continue <i class="fas fa-arrow-right"></i>
                 </button>
               </div>
               <div class="form-slider-last">
@@ -360,7 +355,7 @@
                 <label for="input">Phone Number</label>
                 <input id="input" placeholder="Phone Number" />
                 <button class="light-bg" id="submit-button" type="button">
-                  Submit
+                  Submit <i class="fas fa-arrow-right"></i>
                 </button>
               </div>
             </form>
